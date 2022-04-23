@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">a2z User</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">HOME fragment</string>
+    <string name="underline"> <u>Lodge a Complaint </u> </string>
+    <string name="lastmonth">Last Month</string>
+    <string name="title_activity_live_location">LiveLocation</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cwservices.a2zproject.HomePage">
+
+    <LinearLayout
+        android:id="@+id/lltop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/homeback"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            app:srcCompat="@drawable/vuesaxlineararrowleft" />
+
+        <TextView
+            android:id="@+id/hometitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingTop="10dp"
+            android:text="Welcome to A2Z Group"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="20dp"
+            android:paddingTop="10dp"
+            app:srcCompat="@drawable/notification42" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/framlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnav"
+        android:layout_below="@+id/lltop">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bottomnav_back"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/lthome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bottomhome_img"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-5dp"
+                app:srcCompat="@drawable/home1" />
+
+            <TextView
+                android:id="@+id/bottomhome_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:layout_marginStart="10dp"
+                android:text="Home" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ltcomplaint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bottomcomplaint_img"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/complaint" />
+
+            <TextView
+                android:id="@+id/bottomcomplaint_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:text="Complaint" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ltprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bottomprofile_img"
+                android:layout_width="25dp"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/user" />
+
+            <TextView
+                android:id="@+id/bottomprofile_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:fontFamily="@font/poppins_medium"
+                android:textColor="@color/white"
+                android:layout_marginStart="10dp"
+                android:text="Profile" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
